@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgs"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/iconTv"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Welcome to BookStylist App"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSkip"
+        android:text="Login"
+        android:backgroundTint="@color/main"/>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/white"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
